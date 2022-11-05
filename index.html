@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BrainWork</title>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/eb90843083.js" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900;700&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- bootstrap scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+
+  <div class="container-fluid">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand">BrainWork</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#cta" >Free Trial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+
+
+    <!-- Title -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>Meditation and mindfulness for any mind and mood.</h1>
+        <!-- <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fa-brands fa-apple"></i> Download</button> -->
+        <!-- <button type="button" class="btn btn-outline-light btn-lg download-btn"><i class="fa-brands fa-google-play"></i> Download</button> -->
+      </div>
+      <div class="col-lg-6">
+        <img class="title-img" src="images/meditation.png" alt="iphone-mockup">
+      </div>
+    </div>
+  
+  </div>
+      
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="row">
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-heart feature-icon"></i>
+        <h3 class="feature-title">Find more joy</h3>
+        <p class="feature-subtitle">Catch your breath, relax your mind, and feel 14% less stressed in just 10 days.</p>
+      </div>
+
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-moon feature-icon"></i>
+        <h3 class="feature-title">Get more goodnights</h3>
+        <p class="feature-subtitle">Put your mind to bed, wake up refreshed, and make good days your new normal.</p>
+      </div>
+    
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-sun feature-icon"></i>
+        <h3 class="feature-title">Make every day happier</h3>
+        <p class="feature-subtitle" >Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+    
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I was broken … then Kunal told me to try meditation.</h2>
+          <img class="testimonial-img" src="images/elon-musk-modified.png" alt="dog-profile">
+          <em>Elon Musk, Texas</em>
+        </div>
+        <div class="carousel-item">
+          <h2>I now go to a place where I was previously afraid to go.</h2>
+          <img class="testimonial-img" src="images/putin-modified.png" alt="lady-profile">
+          <em>Putin, Moscow</em>
+        </div>
+        <div class="carousel-item">
+          <h2>Changing my thoughts has allowed me to change my life.</h2>
+          <img class="testimonial-img" src="images/xi-modified.png" alt="lady-profile">
+          <em>Xi Jinping, Beijing</em>
+        </div>
+      
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Meditation music -->
+
+  <section id="cta">
+
+    <h3 class="heading-cta">Be kind to your mind.</h3>
+    <!-- <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fa-brands fa-apple"></i>Download</button> -->
+    <!-- <button type="button" class="btn btn-outline-light btn-lg download-btn"><i class="fa-brands fa-google-play"></i>Download</button> -->
+    <button id="1" onclick="music(this.id)" class="btn btn-outline-warning musicbtn">Meditate</button>
+    <button id="2" onclick="music(this.id)" class="btn btn-outline-warning musicbtn">Sleep</button>
+    <button id="3" onclick="music(this.id)" class="btn btn-outline-warning musicbtn">Move</button>
+    <button id="4" onclick="music(this.id)" class="btn btn-outline-warning musicbtn">Focus</button>
+    <button id="5" onclick="music(this.id)" class="btn btn-outline-warning musicbtn">Wake Up</button>
+    <br>
+    <audio controls id="aud">
+      <source id="audio" src="sounds/meditate.mp3">
+    </audio>
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="icon fa-brands fa-twitter"></i>
+    <i class="icon fa-brands fa-facebook-f"></i>
+    <i class="icon fa-brands fa-instagram"></i>
+    <i class="icon fa-solid fa-envelope"></i>
+    <p class="icon">© Copyright BrainWork</p>
+  </footer>
+
+  <script>
+    var arr = ["meditate", "sleep", "move", "focus", "wake-up"]
+    function music(id){
+      document.getElementById("aud").src = "sounds/" + arr[id-1] +".mp3";
+    }
+
+  </script>
+
+</body>
+
+</html>
